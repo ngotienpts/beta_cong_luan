@@ -4,7 +4,7 @@
     bottom: 2rem;
     width: 2.5rem;
     height: 2.5rem;
-    background: #337357;
+    background: #eb242c;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -25,13 +25,21 @@
 }
 
 .footer {
-    border-top: 1px solid #e5e5e5;
-    background-color: #f1f9ff;
-}
+    background-color: #d6d6d6;
 
-.footer-navbar {
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 0.625rem;
+    &-logo {
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+    &-info {
+        &-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
 }
 
 // mobile

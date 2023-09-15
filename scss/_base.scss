@@ -43,7 +43,7 @@ html {
 
 body {
     position: relative;
-    font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", serif;
     font-weight: 400;
     font-size: 1rem;
     font-style: normal;
@@ -62,7 +62,7 @@ textarea,
 select,
 button {
     outline: none;
-    font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", serif;
     text-rendering: geometricPrecision;
     border: 0;
     color: #000;
@@ -173,11 +173,26 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0.5rem 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
     background-color: transparent;
     color: #333;
     outline: none;
+    transition: all 0.2s ease;
+    &:hover {
+        border-color: #eb242c;
+    }
+
+    &--secondary {
+        color: #fcfaf6;
+        height: 1.875rem;
+        &:hover {
+            color: #eb242c;
+        }
+    }
 }
+
 /*===========================================================================*/
 .fs-10 {
     font-size: 0.625rem;
@@ -287,6 +302,15 @@ img {
 .text-gray-82 {
     color: #828282;
 }
+.text-gray-c4 {
+    color: #c4c4c4;
+}
+.text-gray-4f {
+    color: #4f4f4f;
+}
+.text-gray-c0 {
+    color: #c0c0c0;
+}
 .text-red-eb {
     color: #eb242c;
 }
@@ -308,10 +332,13 @@ img {
     background-color: transparent;
 }
 .bg-gray-d2 {
-    background-color: #d7caca;
+    background-color: #d2d2d2;
 }
 .bg-gray-d6 {
     background-color: #d6d6d6;
+}
+.bg-gray-f7 {
+    background-color: #f7f7f7;
 }
 .bg-blue-152 {
     background-color: #152764;
@@ -949,6 +976,9 @@ img {
 .justify-center {
     justify-content: center;
 }
+.justify-end {
+    justify-content: end;
+}
 .justify-around {
     justify-content: space-around;
 }
@@ -996,6 +1026,9 @@ img {
 /*=================================================================*/
 .h-full {
     height: 100%;
+}
+.h-30 {
+    height: 1.875rem;
 }
 .h-32 {
     height: 2rem;
@@ -1067,7 +1100,7 @@ img {
     }
     &:hover {
         > a {
-            color: #c35403;
+            color: #eb242c;
             transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
         }
 
@@ -1079,8 +1112,8 @@ img {
 .hover-orange-2 {
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
     &:hover {
-        color: #c35403;
-        background-color: rgba($color: #c35403, $alpha: 0.1);
+        color: #eb242c;
+        background-color: rgba($color: #eb242c, $alpha: 0.1);
         border-color: currentColor;
     }
 }

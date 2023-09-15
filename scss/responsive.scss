@@ -18,13 +18,13 @@
         padding-right: 0.625rem;
     }
     .footer {
-        padding: 1.875rem 0;
+        padding: 1.875rem 0 3rem;
 
-        &-logo {
-            img {
-                height: 80px;
-            }
-        }
+        // &-logo {
+        //     img {
+        //         height: 80px;
+        //     }
+        // }
         &-info {
             font-size: 0.875rem;
             color: #000;
@@ -50,13 +50,8 @@
     }
 
     .register-email {
-        &__group {
-            max-width: 240px;
-            margin: auto;
-        }
-        &__btn {
-            background-color: #eb242c;
-        }
+        margin-right: auto;
+        margin-left: unset;
     }
 
     // --------------------------------------------------------------------detail

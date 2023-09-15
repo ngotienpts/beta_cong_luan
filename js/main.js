@@ -9,11 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // search mb
     var searchMbs = document.querySelectorAll(".js__searchMb");
 
-    // show popup image
+    // slice
     var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
-
-    // navbar mb
-    var navbarMb = document.querySelector(".js__navbarMenuMb");
+    var fiveSlides = document.querySelectorAll(".js__swiperFiveItemsContainer");
 
     const app = {
         // su ly cac su kien
@@ -79,29 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     };
                 });
             }
-
-            // navbar mb
-            if (navbarMb) {
-                const container = navbarMb.querySelector(".js__navbarMb");
-                const scrollBtn = navbarMb.querySelector(".js__navbarIcon");
-
-                let scrollAmount = 0;
-                let scrollPosition = 0;
-
-                scrollBtn.addEventListener("click", function () {
-                    const scrollDistance = 100;
-                    scrollAmount = scrollPosition + scrollDistance;
-                    scrollAmount = Math.min(
-                        scrollAmount,
-                        container.scrollWidth - container.clientWidth
-                    );
-                    container.scrollTo({
-                        left: scrollAmount,
-                        behavior: "smooth",
-                    });
-                    scrollPosition = scrollAmount;
-                });
-            }
         },
         // slider one item
         sliderOneItems: function () {
@@ -114,6 +89,23 @@ document.addEventListener("DOMContentLoaded", function () {
                     slidesPerGroup: 1,
                     autoHeight: true,
                     effect: "fade",
+                    pagination: {
+                        el: pagi,
+                        clickable: true,
+                    },
+                });
+            });
+        },
+        // slider five item
+        sliderFiveItems: function () {
+            fiveSlides.forEach((item) => {
+                var pagi = item.querySelector(".swiper-pagination");
+                var slider = item.querySelector(".js__swiperItems");
+                new Swiper(slider, {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                    slidesPerGroup: 1,
+                    autoHeight: true,
                     pagination: {
                         el: pagi,
                         clickable: true,
@@ -151,6 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // slider one item
             this.sliderOneItems();
+            // slider five item
+            this.sliderFiveItems();
             // window scroll
             this.windowScroll();
         },
