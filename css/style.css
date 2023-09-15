@@ -540,6 +540,10 @@ img {
   background-color: #152764;
 }
 
+.bg-blue-284 {
+  background-color: #284fa7;
+}
+
 /*=================================================================*/
 .fw-300 {
   font-weight: 300;
@@ -2072,11 +2076,11 @@ img {
   background: transparent;
 }
 .box-media-mb .articles__small::-webkit-scrollbar-thumb {
-  background: #175339;
+  background: #999;
   border-radius: 1rem;
 }
 .box-media-mb .articles__small::-webkit-scrollbar-thumb:hover {
-  background: #175339;
+  background: #999;
 }
 .box-media-mb .articles__small .article:first-child {
   padding-top: 0;
