@@ -1831,7 +1831,7 @@ img {
 .heading-primary--fixColor a {
   display: inline-block;
   padding-bottom: 0.625rem;
-  border-bottom: 2px solid #152764;
+  border-bottom: 2px solid #284fa7;
 }
 
 .heading-secondary {
@@ -2196,7 +2196,7 @@ img {
   border-radius: 0;
 }
 .box-event .swiper-pagination-bullet-active {
-  background: #152764;
+  background: #284fa7;
 }
 
 .detail-primary {
