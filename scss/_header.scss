@@ -105,23 +105,17 @@
             font-weight: 800;
             line-height: 130%;
             text-transform: uppercase;
-            color: #096639;
-            &::before {
-                content: "";
+            color: #eb242c;
+
+            &::after {
+                content: "\276F";
+                position: absolute;
+                top: 50%;
+                right: -1.75rem;
+                transform: translateY(-50%);
+                font-size: 24px;
+                color: #152764;
             }
-        }
-        &::before {
-            content: "\276F";
-            position: absolute;
-            top: 50%;
-            left: -1.75rem;
-            transform: translateY(-50%);
-            font-size: 28px;
-            color: #acce22;
-        }
-        &:last-child {
-            user-select: none;
-            pointer-events: none;
         }
     }
 }
@@ -235,6 +229,7 @@
 .header-top-mb {
     position: relative;
     overflow: hidden;
+    background-color: #f7f7f7;
     & .left {
         .logo img {
             height: 26px;

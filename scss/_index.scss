@@ -148,6 +148,7 @@
         }
     }
 }
+
 .section-quaternary {
     & .block-right {
         .article:last-child {
@@ -155,7 +156,16 @@
         }
     }
 }
+.section-quinary {
+    & .container-block {
+        grid-template-columns: 1fr 270px;
+    }
 
+    & .article-large {
+        padding-right: 1.25rem;
+        border-right: 1px solid #e5e5e5;
+    }
+}
 .newspaper {
     position: relative;
     overflow: hidden;

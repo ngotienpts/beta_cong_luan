@@ -102,13 +102,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 var pagi = item.querySelector(".swiper-pagination");
                 var slider = item.querySelector(".js__swiperItems");
                 new Swiper(slider, {
-                    slidesPerView: 5,
+                    slidesPerView: 1.5,
                     spaceBetween: 20,
                     slidesPerGroup: 1,
                     autoHeight: true,
                     pagination: {
                         el: pagi,
                         clickable: true,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        1200: {
+                            slidesPerView: 5,
+                        },
                     },
                 });
             });

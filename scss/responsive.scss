@@ -83,6 +83,26 @@
         box-shadow: unset;
         padding: 0;
     }
+    .section-following {
+        padding: 0.9375rem;
+    }
+    .section-following {
+        &__tag {
+            overflow: auto;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            margin-right: 0;
+
+            li:first-child::after {
+                content: "";
+                margin: 0;
+            }
+        }
+        & .swiper-pagination {
+            top: 33px;
+            transform: translateX(-15px);
+        }
+    }
 
     // --------------------------------------------------------------------cate
 
@@ -113,7 +133,7 @@
                 padding-top: 0.625rem;
             }
             & .article__title {
-                font-size: 1rem;
+                font-size: 0.875rem;
             }
         }
     }
@@ -127,9 +147,8 @@
                 }
             }
             & .article__title {
-                font-size: 1rem;
-                font-weight: 500;
-                font-family: "Roboto", sans-serif;
+                font-size: 0.875rem;
+                font-weight: 400;
             }
             & .article__des,
             & .time-public {
