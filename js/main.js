@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
     var fiveSlides = document.querySelectorAll(".js__swiperFiveItemsContainer");
 
+    // change tab
+    var tabs = document.querySelectorAll(".js__tabs");
+    var panes = document.querySelectorAll(".js__panes");
+
     const app = {
         // su ly cac su kien
         handleEvent: function () {
@@ -24,6 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.body.scrollTop = 0;
                     document.documentElement.scrollTop = 0;
                 };
+            }
+
+            // tabs
+            if (tabs && panes) {
+                tabs.forEach((tab, index) => {
+                    var pane = panes[index];
+
+                    tab.onclick = function () {
+                        document
+                            .querySelector(".tab-item.active")
+                            .classList.remove("active");
+                        document
+                            .querySelector(".pane-item.active")
+                            .classList.remove("active");
+
+                        this.classList.add("active");
+                        pane.classList.add("active");
+                    };
+                });
             }
 
             // show sub menu

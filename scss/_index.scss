@@ -317,6 +317,33 @@
         background: #152764;
     }
 }
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    & .tab-item {
+        cursor: pointer;
+        &.active {
+            color: #eb242c;
+            span {
+                border-bottom-color: currentColor;
+            }
+        }
+        span {
+            display: inline-block;
+            padding-bottom: 0.625rem;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: transparent;
+        }
+    }
+}
+.panes {
+    & .pane-item:not(.active) {
+        display: none;
+    }
+}
 // mobile
 .box-primary {
     box-shadow: 0 1px 2px #e5e5e5;

@@ -92,6 +92,25 @@
             flex-wrap: nowrap;
             white-space: nowrap;
             margin-right: 0;
+            /* width */
+            &::-webkit-scrollbar {
+                height: 0;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: transparent;
+            }
 
             li:first-child::after {
                 content: "";
@@ -99,7 +118,7 @@
             }
         }
         & .swiper-pagination {
-            top: 33px;
+            top: 43px;
             transform: translateX(-15px);
         }
     }

@@ -2060,6 +2060,33 @@ img {
   background: #152764;
 }
 
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.tabs .tab-item {
+  cursor: pointer;
+}
+.tabs .tab-item.active {
+  color: #eb242c;
+}
+.tabs .tab-item.active span {
+  border-bottom-color: currentColor;
+}
+.tabs .tab-item span {
+  display: inline-block;
+  padding-bottom: 0.625rem;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+}
+
+.panes .pane-item:not(.active) {
+  display: none;
+}
+
 .box-primary {
   box-shadow: 0 1px 2px #e5e5e5;
 }

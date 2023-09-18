@@ -92,13 +92,29 @@
     flex-wrap: nowrap;
     white-space: nowrap;
     margin-right: 0;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .section-following__tag::-webkit-scrollbar {
+    height: 0;
+  }
+  .section-following__tag::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .section-following__tag::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .section-following__tag::-webkit-scrollbar-thumb:hover {
+    background: transparent;
   }
   .section-following__tag li:first-child::after {
     content: "";
     margin: 0;
   }
   .section-following .swiper-pagination {
-    top: 33px;
+    top: 43px;
     transform: translateX(-15px);
   }
 
