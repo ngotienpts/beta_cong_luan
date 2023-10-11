@@ -14,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var fiveSlides = document.querySelectorAll(".js__swiperFiveItemsContainer");
 
     // change tab
-    var tabs = document.querySelectorAll(".js__tabs");
-    var panes = document.querySelectorAll(".js__panes");
+    var changeTabs = document.querySelectorAll(".js__changeTabs");
 
     const app = {
         // su ly cac su kien
@@ -30,22 +29,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 };
             }
 
-            // tabs
-            if (tabs && panes) {
-                tabs.forEach((tab, index) => {
-                    var pane = panes[index];
+            // change tabs
+            if (changeTabs) {
+                changeTabs.forEach((changeTab) => {
+                    console.log(changeTab);
+                    var tabs = changeTab.querySelectorAll(".js__tab");
+                    var panes = changeTab.querySelectorAll(".js__pane");
 
-                    tab.onclick = function () {
-                        document
-                            .querySelector(".tab-item.active")
-                            .classList.remove("active");
-                        document
-                            .querySelector(".pane-item.active")
-                            .classList.remove("active");
+                    tabs.forEach((tab, index) => {
+                        var pane = panes[index];
 
-                        this.classList.add("active");
-                        pane.classList.add("active");
-                    };
+                        tab.onclick = function () {
+                            changeTab
+                                .querySelector(".tab-item.active")
+                                .classList.remove("active");
+                            changeTab
+                                .querySelector(".pane-item.active")
+                                .classList.remove("active");
+
+                            this.classList.add("active");
+                            pane.classList.add("active");
+                        };
+                    });
                 });
             }
 
@@ -124,6 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
             fiveSlides.forEach((item) => {
                 var pagi = item.querySelector(".swiper-pagination");
                 var slider = item.querySelector(".js__swiperItems");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+
                 new Swiper(slider, {
                     slidesPerView: 1.5,
                     spaceBetween: 20,
@@ -133,18 +141,26 @@ document.addEventListener("DOMContentLoaded", function () {
                         el: pagi,
                         clickable: true,
                     },
+                    navigation: {
+                        nextEl: next,
+                        prevEl: prev,
+                    },
                     breakpoints: {
                         640: {
                             slidesPerView: 2,
+                            slidesPerGroup: 1,
                         },
                         768: {
                             slidesPerView: 2,
+                            slidesPerGroup: 1,
                         },
                         1024: {
                             slidesPerView: 4,
+                            slidesPerGroup: 2,
                         },
                         1200: {
                             slidesPerView: 5,
+                            slidesPerGroup: 4,
                         },
                     },
                 });

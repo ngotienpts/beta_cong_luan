@@ -850,18 +850,18 @@
                         <!-- end articles -->
 
                         <!-- read a lot -->
-                        <div class="read-a-lot mt-20">
-                            <div class="fs-18 fw-800 font-sarabun uppercase tabs lh-130">
-                                <h2 class="tab-item text-blue-152 active js__tabs">
+                        <div class="read-a-lot mt-20 js__changeTabs">
+                            <div class="read-a-lot__tabs fs-18 fw-800 font-sarabun uppercase tabs lh-130 js__tabs">
+                                <h2 class="read-a-lot__tab-item tab-item text-blue-152 active js__tab">
                                     <span>Đọc nhiều</span>
                                 </h2>
-                                <h2 class="tab-item text-blue-152 js__tabs">
+                                <h2 class="read-a-lot__tab-item tab-item text-blue-152 js__tab">
                                     <span>Quan tâm</span>
                                 </h2>
                             </div>
                             <!-- content -->
-                            <div class="panes">
-                                <div class="read-a-lot__content pane-item active js__panes">
+                            <div class="read-a-lot__panes panes js__panes">
+                                <div class="read-a-lot__content read-a-lot__tab-pane pane-item active js__pane">
                                     <!-- item -->
                                     <div class="read-a-lot__item py-15 border-e5">
                                         <h3
@@ -983,7 +983,7 @@
                                     </div>
                                     <!-- end item -->
                                 </div>
-                                <div class="read-a-lot__content pane-item js__panes">
+                                <div class="read-a-lot__content read-a-lot__tab-pane pane-item js__pane">
                                     <!-- item -->
                                     <div class="read-a-lot__item py-15 border-e5">
                                         <h3
@@ -1389,321 +1389,848 @@
 
                 <!-- box theo dòng sự kiện -->
                 <section
-                    class="section-following w-1140 py-15 px-30 bg-gray-d2 mt-20"
+                    class="section-following w-1140 py-15 px-30 bg-gray-d2 mt-20 js__changeTabs"
                 >
                     <!-- heading -->
                     <div
                         class="section-following__heading mb-20"
                     >
-                        <div class="d-2xl-flex d-lg-none items-center">
+                        <div class="d-2xl-flex d-lg-none items-center tabs js__tabs">
                             <h2
-                                class="heading-tertiary relative z-20 hover-orange font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130 flex-0"
+                                class="heading-tertiary relative z-20 hover-orange font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130 flex-0 section-following__tab-item tab-item active js__tab"
                             >
-                                <a href="#">Theo dòng sự kiện</a>
+                                Theo dòng sự kiện
                             </h2>
                             <ul
                                 class="section-following__tag flex-1 relative z-20 d-2xl-flex items-center"
                             >
                                 <li
-                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange"
+                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange  section-following__tab-item tab-item js__tab"
                                 >
-                                    <a href="#">#Kỳ thi tốt nghiệp THPT 2023</a>
+                                    #Kỳ thi tốt nghiệp THPT 2023
                                 </li>
                                 <li
-                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange"
+                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange  section-following__tab-item tab-item js__tab"
                                 >
-                                    <a href="#">#Vinfast</a>
+                                    #Vinfast
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="d-2xl-none d-lg-flex">
-                            <ul
-                                class="section-following__tag flex-1 relative z-20 d-2xl-flex items-center"
-                            >
-                                <li
-                                    class="font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130"
-                                >
-                                    <a href="#">Theo dòng sự kiện</a>
-                                </li>
-                                <li
-                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange"
-                                >
-                                    <a href="#">#Kỳ thi tốt nghiệp THPT 2023</a>
-                                </li>
-                                <li
-                                    class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange"
-                                >
-                                    <a href="#">#Vinfast</a>
-                                </li>
-                            </ul>
-                        </div> 
                     </div>
 
                     <!-- end heading -->
-                    <!-- container -->
-                    <div
-                        class="box-event__container js__swiperFiveItemsContainer"
-                    >
-                        <div class="swiper js__swiperItems">
-                            <div class="swiper-wrapper">
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+
+                    <!-- panes -->
+                    <div class="panes js__panes">
+                        <!-- pane -->
+                        <div class="pane-item active js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img
-                                                    src="./images/3.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div
-                                            class="article__content p-10 bg-white"
-                                        >
-                                            <h3
-                                                class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
-                                            >
-                                                <a href="#"
-                                                    >Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
                                                 >
-                                            </h3>
-                                            <div
-                                                class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
-                                            >
-                                                <span
-                                                    class="d-2xl-inline-block fw-700 text-gray-66"
-                                                    >Quốc tế</span
-                                                >
-                                                <span
-                                                    class="d-2xl-inline-block fw-400 text-gray-82"
-                                                    >&nbsp;-&nbsp;7h</span
-                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
+                                        <!-- end swiper slide -->
                                     </div>
                                 </div>
-                                <!-- end swiper slide -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <!-- end container -->
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                        <!-- pane -->
+                        <div class="pane-item js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                        <!-- pane -->
+                        <div class="pane-item js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                    </div> 
+                    <!-- end panes -->
                 </section>
                 <!-- end box theo dòng sự kiện -->
 
@@ -2006,6 +2533,7 @@
                                         <!-- end swiper slide -->
                                     </div>
                                 </div>
+                                
                                 <div class="swiper-pagination"></div>
                             </div>
                             <!-- end container -->
@@ -4514,198 +5042,841 @@
                 <!-- ads center-->
 
                 <!-- box theo dong su kien mb-->
-                <section class="section-following w-1140 py-15 px-30 bg-gray-d2 mt-20">
+                <section
+                    class="section-following w-1140 py-15 px-30 bg-gray-d2 mt-20 js__changeTabs"
+                >
+                    
+
                     <!-- heading -->
                     <div class="section-following__heading mb-20">
-                        <div class="d-2xl-flex d-lg-none items-center">
-                            <h2 class="heading-tertiary relative z-20 hover-orange font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130 flex-0">
-                                <a href="#">Theo dòng sự kiện</a>
-                            </h2>
-                            <ul class="section-following__tag flex-1 relative z-20 d-2xl-flex items-center">
-                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange">
-                                    <a href="#">#Kỳ thi tốt nghiệp THPT 2023</a>
-                                </li>
-                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange">
-                                    <a href="#">#Vinfast</a>
-                                </li>
-                            </ul>
-                        </div>
-
                         <div class="d-2xl-none d-lg-flex">
-                            <ul class="section-following__tag flex-1 relative z-20 d-2xl-flex items-center">
-                                <li class="font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130">
-                                    <a href="#">Theo dòng sự kiện</a>
+                            <ul class="section-following__tag flex-1 relative z-20 d-2xl-flex items-center tabs js__tabs">
+                                <li class="font-helve fs-24 text-gray-33 fw-700 uppercase mr-20 lh-130  section-following__tab-item tab-item active js__tab">
+                                    Theo dòng sự kiện
                                 </li>
-                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange">
-                                    <a href="#">#Kỳ thi tốt nghiệp THPT 2023</a>
+                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange  section-following__tab-item tab-item js__tab">
+                                    #Kỳ thi tốt nghiệp THPT 2023
                                 </li>
-                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange">
-                                    <a href="#">#Vinfast</a>
+                                <li class="fs-15 text-blue-284 fw-700 font-roboto lh-22 hover-orange  section-following__tab-item tab-item js__tab">
+                                    #Vinfast
                                 </li>
                             </ul>
                         </div> 
                     </div>
 
                     <!-- end heading -->
-                    <!-- container -->
-                    <div class="box-event__container js__swiperFiveItemsContainer">
-                        <div class="swiper js__swiperItems swiper-initialized swiper-horizontal swiper-autoheight swiper-ios swiper-backface-hidden">
-                            <div class="swiper-wrapper" id="swiper-wrapper-92a010ec61d3ef10a5" aria-live="polite" style="transition-duration: 0ms; height: 214px; transform: translate3d(0px, 0px, 0px);">
-                                <!-- swiper slide -->
-                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+
+                    <!-- panes -->
+                    <div class="panes js__panes">
+                        <!-- pane -->
+                        <div class="pane-item active js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
-                                    </div>
-                                </div>
-                                <!-- end swiper slide -->
-                                <!-- swiper slide -->
-                                <div class="swiper-slide" role="group" aria-label="6 / 6" style="width: 200px; margin-right: 20px;">
-                                    <div class="article">
-                                        <!-- img -->
-                                        <div class="article__img border-4">
-                                            <a href="#" class="image-wrapper">
-                                                <img src="./images/3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!-- end img -->
-                                        <!-- content -->
-                                        <div class="article__content p-10 bg-white">
-                                            <h3 class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange">
-                                                <a href="#">Vực dậy nghề muối, tăng thu
-                                                    nhập cho diêm dân</a>
-                                            </h3>
-                                            <div class="time-public d-2xl-flex items-center fs-13 font-arial pt-12">
-                                                <span class="d-2xl-inline-block fw-700 text-gray-66">Quốc tế</span>
-                                                <span class="d-2xl-inline-block fw-400 text-gray-82">&nbsp;-&nbsp;7h</span>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
                                             </div>
                                         </div>
-                                        <!-- end content -->
+                                        <!-- end swiper slide -->
                                     </div>
                                 </div>
-                                <!-- end swiper slide -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
-                    </div>
-                    <!-- end container -->
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                        <!-- pane -->
+                        <div class="pane-item js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                        <!-- pane -->
+                        <div class="pane-item js__pane">
+                            <!-- container -->
+                            <div
+                                class="box-event__container js__swiperFiveItemsContainer"
+                            >
+                                <div class="swiper js__swiperItems">
+                                    <div class="swiper-wrapper">
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                        <!-- swiper slide -->
+                                        <div class="swiper-slide">
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article__img border-4">
+                                                    <a href="#" class="image-wrapper">
+                                                        <img
+                                                            src="./images/3.jpg"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div
+                                                    class="article__content p-10 bg-white"
+                                                >
+                                                    <h3
+                                                        class="article__title fix-text3 fs-16 fw-500 lh-130 hover-orange"
+                                                    >
+                                                        <a href="#"
+                                                            >Vực dậy nghề muối, tăng thu
+                                                            nhập cho diêm dân</a
+                                                        >
+                                                    </h3>
+                                                    <div
+                                                        class="time-public d-2xl-flex items-center fs-13 font-arial pt-12"
+                                                    >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-700 text-gray-66"
+                                                            >Quốc tế</span
+                                                        >
+                                                        <span
+                                                            class="d-2xl-inline-block fw-400 text-gray-82"
+                                                            >&nbsp;-&nbsp;7h</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                        </div>
+                                        <!-- end swiper slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end container -->
+                        </div> 
+                        <!-- end pane -->
+                    </div> 
+                    <!-- end panes -->
                 </section>
                 <!-- end box theo dong su kien mb-->
 
