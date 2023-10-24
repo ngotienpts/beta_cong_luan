@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 80em) {
   .d-xl-none {
     display: none;
@@ -75,6 +76,25 @@
   .wrapper {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+  }
+
+  .breadcrumb-item::after {
+    content: "❯";
+    position: absolute;
+    top: 50%;
+    right: -1.75rem;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #152764;
+  }
+  .breadcrumb-item:first-child {
+    font-size: 16px;
+  }
+  .breadcrumb-item:first-child::after {
+    font-size: 16px;
+  }
+  .breadcrumb-item:last-child::after {
+    content: "";
   }
 
   .ads-center {

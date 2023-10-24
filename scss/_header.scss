@@ -94,6 +94,9 @@
     }
 }
 .breadcrumb {
+    flex-wrap: nowrap;
+    overflow: auto;
+    white-space: nowrap;
     &-item {
         position: relative;
         + .breadcrumb-item {
